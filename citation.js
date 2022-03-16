@@ -26,7 +26,7 @@ let citations = [
   let auteur    =  document.querySelector("#auteur");
   let button    = document.querySelector("#nouveau");
 
-  let dernier   = citations[0];
+  let dernier   = 0;
   let nombreAleatoire;
 
   function entierAleatoire(max){
@@ -37,8 +37,8 @@ let citations = [
 
   button.addEventListener('click',()=>{
 
-     nombreAleatoire = entierAleatoire(10)
-      dernier = citations[nombreAleatoire]
+    nombreAleatoire = entierAleatoire(19)
+    dernier = citations[nombreAleatoire]
     
     citation.textContent = dernier[0];
     auteur.textContent = dernier[1]
