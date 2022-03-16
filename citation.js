@@ -12,7 +12,7 @@ let citations = [
     ["La valeur d'un homme tient dans sa capacité à donner et non dans sa capacité à recevoir.", "Albert Einstein"],
     ["Le succès c'est d'avoir ce que vous désirez. Le bonheur c'est aimer ce que vous avez.", "H.Jackson Brown"],
     ["Le destin n'est pas une question de chance, mais de choix", "W.Jennings Bryan"],
-    ["Le coeur d'une m_re est un abîme au fond duquel se trouve toujours un pardon.", "Honoré de Balzac"],
+    ["Le coeur d'une mère est un abîme au fond duquel se trouve toujours un pardon.", "Honoré de Balzac"],
     ["Il n'ya que deux conduites avec la vie : ou on la rêve ou on l'accomplit.", "René Char"],
     ["Celui qui est le maître de lui-même est plus grand que celui qui est le maître du monde.", "Bouddha"],
     ["Le succès n'est pas la clé du bonheur. le bonheur est la clé du succès. Si vous aimez ce que vous faites, vous réussirez.", "Albert Schweitzer"],
@@ -36,7 +36,6 @@ let citations = [
 }
 
   button.addEventListener('click',()=>{
-
     nombreAleatoire = entierAleatoire(19)
     dernier = citations[nombreAleatoire]
     
