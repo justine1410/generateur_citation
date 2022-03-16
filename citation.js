@@ -37,8 +37,8 @@ let citations = [
 
   button.addEventListener('click',()=>{
 
-    nombreAleatoire = entierAleatoire(3)
-    dernier = citations[nombreAleatoire]
+     nombreAleatoire = entierAleatoire(10)
+      dernier = citations[nombreAleatoire]
     
     citation.textContent = dernier[0];
     auteur.textContent = dernier[1]
