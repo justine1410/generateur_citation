@@ -1,26 +1,25 @@
 // Tableau de citations
 let citations = [
-    ["La vie est un mystère qu'il faut vivre, et non un problème à résoudre.", "Gandhi"],
+    ["La vie est un mystère qu'il faut vivre, et non un problème à résoudre.", "Mahatma Gandhi"],
     ["Le plus grand risque est de ne prendre aucun risque.", "Mark Zuckerberg"],
-    ["Méritez votre statut de leader chaque jour.", "Mickael Jordan"],
-    ["Soyez le changement que vous voulez voir dans le monde.", "Gandhi"],
-    ["A chaque fois que vous vous retrouvez du même côté que la majorité, il est temps de prendre du recul, et de réfléchir.", "Mark Twain"],
+    ["Le bonheur n'est pas d'avoir tout ce qu'on désire mais d'apprécier ce que l'on a...", "Paulo Coello"],
+    ["Il faut toute la vie pour apprendre à vivre.", "Sénèque"],
+    ["La vie est un défi à relever, un bonheur à mériter, une aventure à tenter", "Mère Teresa"],
     ["Seulement ceux qui prendront le risque d’aller trop loin découvriront jusqu’où on peut aller.", "T.S Elliot"],
-    ["Le succès c’est tomber sept fois, se relever huit.", "Proverbe japonais"],
-    ["Dans vingt ans vous serez plus déçus par les choses que vous n’avez pas faites que par celles que vous avez faites. Alors sortez des sentiers battus. Mettez les voiles. Explorez. Rêvez. Découvrez.", "Mark Twain"],
-    ["Si vous attendez pour agir, tout ce que vous gagnerez, avec le temps, c’est de l’âge.", "Brian Tracy"],
-    ["Quand on concentre son attention sur un seul projet, l’esprit suggère constamment des idées et des améliorations qui lui échapperaient s’il était occupé avec plusieurs projets en même temps.", "P.T. Barnum"],
-    ["Se dédier à faire tout ce que l’on peut pour aider les autres à obtenir ce qu’ils veulent, c’est la clé du succès.", "Brian Sher"],
-    ["Si vous pensez que vous êtes trop petit pour avoir de l’impact, essayez d’aller au lit avec un moustique.", "Anita Roddick"],
-    ["Ne jugez pas chaque jour sur ce que vous récoltez, mais sur les graines que vous semez.", "Robert Louis Stevenson"],
-    ["L’action est la clé fondamentale de tout succès.", "Pablo Picasso"],
-    ["Le succès, c’est se promener d’échecs en échecs tout en restant motivé.", "Winston Churchill"],
-    ["Votre avenir est créé par ce que vous faîtes aujourd’hui, pas demain.", "Robert T. Kiyosaki"],
-    ["Ne vous découragez pas, c’est souvent la dernière clef du trousseau qui ouvre la porte.", "Zig Ziglar"],
-    ["Pour gagner votre vie, apprenez à l’école. Pour gagner une fortune, apprenez par vous-même.", "Brian Tracy"],
-    ["Les gagnants trouvent des moyens, les perdants des excuses…", "F. D. Roosevelt"],
-    ["Vous n’êtes jamais trop vieux pour vous fixer de nouveaux buts, ou rendre vos rêves réalité.", "C.S. Lewis"],
-    ["Un pessimiste voit la difficulté dans chaque opportunité. Un optimiste voit une opportunité dans chaque difficulté.", "Winston Churchill"]
+    ["Là où il y a l'amour, il y a la vie", "Mahatma Gandhi"],
+    ["Il n'existe que deux choses infinies, l'univers et la bêtise humaine... mais pour l'univers, je n'ai pas de certitude absolue", "Albert Einstein"],
+    ["Le bonheur est la seule chose qui se multiplie quand on la partage.", "Albert Schweitzer"],
+    ["La valeur d'un homme tient dans sa capacité à donner et non dans sa capacité à recevoir.", "Albert Einstein"],
+    ["Le succès c'est d'avoir ce que vous désirez. Le bonheur c'est aimer ce que vous avez.", "H.Jackson Brown"],
+    ["Le destin n'est pas une question de chance, mais de choix", "W.Jennings Bryan"],
+    ["Le coeur d'une m_re est un abîme au fond duquel se trouve toujours un pardon.", "Honoré de Balzac"],
+    ["Il n'ya que deux conduites avec la vie : ou on la rêve ou on l'accomplit.", "René Char"],
+    ["Celui qui est le maître de lui-même est plus grand que celui qui est le maître du monde.", "Bouddha"],
+    ["Le succès n'est pas la clé du bonheur. le bonheur est la clé du succès. Si vous aimez ce que vous faites, vous réussirez.", "Albert Schweitzer"],
+    ["Crois en toi-même et en tout ce que tu es. Sache qu'il y a des choses à l'intérieur de toi qui sont plus grandes que n'importe quel obstacle", "Christian Larson"],
+    ["Vous ne pouvez choisir ni comment mourri, ni quand. Mais vous pouvez décider de comment vous allez vivre. Maintenant", "Joan Baez"],
+    ["Seuls, nous pouvons faire si peu; ensemble nous pouvons faire tellement", "Helen Keller"],
+    ["Vis comme si tu devais mourrir demain. Apprends comme si tu devais vivre toujours.", "Mahatma Gandhi"]
   ];
 
   let citation  = document.querySelector("#citation");
@@ -30,15 +29,15 @@ let citations = [
   let dernier   = citations[0];
   let nombreAleatoire;
 
+  function entierAleatoire(max){
+
+    return Math.floor(Math.random()* max +1)
+
+}
 
   button.addEventListener('click',()=>{
-    function entierAleatoire(max){
 
-        return Math.floor(Math.random()* Math.floor(max))
-
-    }
-    nombreAleatoire = entierAleatoire(10)
-
+    nombreAleatoire = entierAleatoire(3)
     dernier = citations[nombreAleatoire]
     
     citation.textContent = dernier[0];
